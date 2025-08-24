@@ -1,0 +1,24 @@
+{
+  "name": "messagelogger",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://01197539@dev.azure.com/01197539/MessageLogger/_git/MessageLogger"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": ".dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "node ./dist/server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3"
+  }
+}
