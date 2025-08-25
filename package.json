@@ -12,8 +12,9 @@
   "main": ".dist/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tsc",
-    "start": "node ./dist/server.js"
+    "build-server": "npx tsc -p ./tsconfig.json",
+    "build-client": "npx tsc -p ./tsconfig.client.json",
+    "start": "node ./public/dist/server.js"
   },
   "dependencies": {
     "express": "^5.1.0",
