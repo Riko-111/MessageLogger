@@ -5,7 +5,6 @@ const sendButton: HTMLButtonElement = document.getElementById('sendButton') as H
 const messageList: HTMLUListElement = document.getElementById("message-list") as HTMLUListElement;
 
 async function sendMessage() {
-    // ✅ Corrected URL (removed extra colon)
     const response = await fetch("http://localhost:3000/send?message=" + messageInput.value, {
         method: "GET",
     });
@@ -39,5 +38,6 @@ async function displayMessages() {
 sendButton.addEventListener("click", async () => {
     await sendMessage().then(() => displayMessages())
 })
+
 
 displayMessages()
